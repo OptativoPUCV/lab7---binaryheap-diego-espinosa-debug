@@ -34,7 +34,9 @@ void heap_pop(Heap* pq){
 
 Heap* createHeap(){
   Heap *nuevo = (Heap*) malloc(sizeof(Heap));
+  nuevo->heapArray = NULL;
+  nuevo->size = 0;
+  nuevo->capac = 3;
   
-
-   return NULL;
+  return nuevo;
 }

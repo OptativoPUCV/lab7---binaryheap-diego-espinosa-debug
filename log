@@ -13,3 +13,8 @@ heap.c:36:9: error: unused variable ‘nuevo’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 1c76bf4
+Thu 28 Sep 2023 07:20:41 PM UTC: 
+ heap.c | 6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+ tests:  0|0
+ab2d86c
