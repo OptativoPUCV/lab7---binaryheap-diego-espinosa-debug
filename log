@@ -66,3 +66,8 @@ heap.c:40:10: error: ‘*nuevo.heapArray’ is used uninitialized [-Werror=unini
 cc1: all warnings being treated as errors
 Compilation failed
 6a8b0d5
+Thu 28 Sep 2023 07:30:37 PM UTC: 
+ heap.c | 4 ----
+ 1 file changed, 4 deletions(-)
+ tests:  0|0
+a96d01e
