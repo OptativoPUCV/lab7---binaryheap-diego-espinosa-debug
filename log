@@ -33,3 +33,14 @@ Thu 28 Sep 2023 07:27:19 PM UTC:
  1 file changed, 2 insertions(+), 2 deletions(-)
  tests:  0|0
 fd45918
+Thu 28 Sep 2023 07:29:43 PM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+heap.c: In function ‘createHeap’:
+heap.c:37:22: error: ‘capac’ undeclared (first use in this function)
+   37 |   for(int i = 0; i < capac; i++){
+      |                      ^~~~~
+heap.c:37:22: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+397e393

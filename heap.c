@@ -34,7 +34,7 @@ void heap_pop(Heap* pq){
 
 Heap* createHeap(){
   Heap * nuevo = (Heap *) malloc(sizeof(Heap));
-  for(int i = 0; i < 0; i++){
+  for(int i = 0; i < capac; i++){
     nuevo->heapArray[i].data = NULL;
     nuevo->heapArray[i].priority = 0;
   }
