@@ -37,7 +37,7 @@ Heap* createHeap(){
   nuevo->size = 0;
   nuevo->capac = 3;
   for(int i = 0; i < 3; i++){
-    nuevo->heapArray[i].data = NULL;
+    
     nuevo->heapArray[i].priority = 0;
   }
   
