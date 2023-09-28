@@ -55,3 +55,14 @@ heap.c:39:22: error: ‘capac’ undeclared (first use in this function)
 heap.c:39:22: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 19176ce
+Thu 28 Sep 2023 07:30:18 PM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+heap.c: In function ‘createHeap’:
+heap.c:40:10: error: ‘*nuevo.heapArray’ is used uninitialized [-Werror=uninitialized]
+   40 |     nuevo->heapArray[i].data = NULL;
+      |     ~~~~~^~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+6a8b0d5
