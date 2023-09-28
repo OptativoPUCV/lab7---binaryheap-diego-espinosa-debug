@@ -44,3 +44,14 @@ heap.c:37:22: error: ‘capac’ undeclared (first use in this function)
 heap.c:37:22: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 397e393
+Thu 28 Sep 2023 07:30:04 PM UTC: 
+ heap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:4:
+heap.c: In function ‘createHeap’:
+heap.c:39:22: error: ‘capac’ undeclared (first use in this function)
+   39 |   for(int i = 0; i < capac; i++){
+      |                      ^~~~~
+heap.c:39:22: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+19176ce
