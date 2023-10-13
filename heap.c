@@ -26,12 +26,13 @@ void* heap_top(Heap* pq){
 
 
 void heap_push(Heap* pq, void* data, int priority){
- /* if(pq->size < pq->capac){
-    if(pq->size)
+  if(pq->size < pq->capac){
+    if(pq->size){
       pq->heapArray[pq->size + 1].data = data;
       pq->heapArray[pq->size + 1].priority = priority;
       pq->size++;
-  }*/
+    }
+  }
 
 }
 
