@@ -35,7 +35,7 @@ void heap_push(Heap* pq, void* data, int priority){
   pq->size++;
   
  int posicion = pq->size - 1;
-  int padre = posicion / 2;
+  int padre = (posicion - 1) / 2;
   void* temporalData;
   int temporalPriority;
 
