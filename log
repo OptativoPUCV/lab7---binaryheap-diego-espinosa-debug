@@ -206,3 +206,20 @@ heap.c:30:57: error: expected ‘;’ before ‘}’ token
       |   ~                                                      
 Compilation failed
 157e053
+Fri 13 Oct 2023 06:35:58 AM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_push’:
+heap.c:30:56: error: expected ‘)’ before ‘;’ token
+   30 |     pq = realloc(pq, (pq->capac * 2 + 1) * sizeof(Heap);
+      |                 ~                                      ^
+      |                                                        )
+heap.c:30:57: error: expected ‘;’ before ‘}’ token
+   30 |     pq = realloc(pq, (pq->capac * 2 + 1) * sizeof(Heap);
+      |                                                         ^
+      |                                                         ;
+   31 |   }
+      |   ~                                                      
+Compilation failed
+eea3e7c
