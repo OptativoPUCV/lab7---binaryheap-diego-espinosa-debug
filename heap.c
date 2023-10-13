@@ -53,13 +53,11 @@ void heap_push(Heap* pq, void* data, int priority){
     padre = (posicion - 1) / 2;
     
   }
-
-  
-
 }
 
 
 void heap_pop(Heap* pq){
+  if(pq->size == 0) return;
 
 }
 
