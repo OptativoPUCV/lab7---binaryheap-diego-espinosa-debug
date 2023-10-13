@@ -47,6 +47,9 @@ void heap_push(Heap* pq, void* data, int priority){
     temporalPriority = pq->heapArray[posicion].priority;
     pq->heapArray[posicion].priority = pq->heapArray[padre].priority;
     pq->heapArray[padre].priority = temporalPriority;
+
+    posicion = padre;
+    padre = (posicion - 1) / 2;
     
   }
 
