@@ -184,3 +184,25 @@ Fri 13 Oct 2023 06:33:51 AM UTC:
  tests:  5|2
 total_score: 35/70
 4886ef1
+Fri 13 Oct 2023 06:35:46 AM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_push’:
+heap.c:30:51: error: ‘heap’ undeclared (first use in this function); did you mean ‘Heap’?
+   30 |     pq = realloc(pq, (pq->capac * 2 + 1) * sizeof(heap);
+      |                                                   ^~~~
+      |                                                   Heap
+heap.c:30:51: note: each undeclared identifier is reported only once for each function it appears in
+heap.c:30:56: error: expected ‘)’ before ‘;’ token
+   30 |     pq = realloc(pq, (pq->capac * 2 + 1) * sizeof(heap);
+      |                 ~                                      ^
+      |                                                        )
+heap.c:30:57: error: expected ‘;’ before ‘}’ token
+   30 |     pq = realloc(pq, (pq->capac * 2 + 1) * sizeof(heap);
+      |                                                         ^
+      |                                                         ;
+   31 |   }
+      |   ~                                                      
+Compilation failed
+157e053
