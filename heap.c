@@ -65,8 +65,8 @@ void heap_pop(Heap* pq){
   int control = 0;
 
   while(1){
-    int izquierda = (2 * control) + 1;
-    int derecha = (2 * control) + 2;
+    int izquierda = (2 * control) + 2;
+    int derecha = (2 * control) + 1;
     int masGrande = control;
 
     if(izquierda < pq->size && pq->heapArray[izquierda].priority > pq->heapArray[masGrande].priority){
