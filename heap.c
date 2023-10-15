@@ -64,7 +64,7 @@ void heap_pop(Heap* pq){
 
   int control = 0;
 
-  while(control < pq->size){
+  while(1){
     int izquierda = (2 * control) + 1;
     int derecha = (2 * control) + 1;
     int masGrande = control;
