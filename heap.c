@@ -77,16 +77,22 @@ void heap_pop(Heap* pq){
       masGrande = derecha;
     }
 
-    void* datatemporal = pq->heapArray[masGrande].data;
-    int prioridadDeTemporal = pq->heapArray[masGrande].priority;
+    if(masGrande != control){
+      void* datatemporal = pq->heapArray[masGrande].data;
+      int prioridadDeTemporal = pq->heapArray[masGrande].priority;
+    
+      pq->heapArray[masGrande].data = pq->heapArray[control].data;
+      pq->heapArray[masGrande].priority = pq->heapArray[control].priority;
+    
+      pq->heapArray[control].data = datatemporal;
+      pq->heapArray[control].priority = prioridadDeTemporal;
 
-    pq->heapArray[masGrande].data = pq->heapArray[control].data;
-    pq->heapArray[masGrande].priority = pq->heapArray[control].priority;
-
-    pq->heapArray[control].data = datatemporal;
-    pq->heapArray[control].priority = prioridadDeTemporal;
-
-    control = pq->size + 1;
+      control = masGrande;
+    }else{
+      break;
+    }
+    
+    
   }
 
 }
