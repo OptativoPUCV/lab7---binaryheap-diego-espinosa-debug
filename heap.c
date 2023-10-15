@@ -82,6 +82,11 @@ void heap_pop(Heap* pq){
 
     pq->heapArray[masGrande].data = pq->heapArray[control].data;
     pq->heapArray[masGrande].priority = pq->heapArray[control].priority;
+
+    pq->heapArray[control].data = temporalData;
+    pq->heapArray[masGrande].priority = prioridadDeTemporal;
+
+    
     
     control = pq->size + 1;
   }
