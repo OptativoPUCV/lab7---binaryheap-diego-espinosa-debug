@@ -300,3 +300,17 @@ Sun 15 Oct 2023 08:14:22 PM UTC:
  tests:  7|1
 total_score: 45/70
 cf1e2c4
+Sun 15 Oct 2023 08:21:15 PM UTC: 
+ heap.c | 6 ++++++
+ 1 file changed, 6 insertions(+)
+In file included from test.c:4:
+heap.c: In function ‘heap_pop’:
+heap.c:81:9: error: unused variable ‘prioridadDeTemporal’ [-Werror=unused-variable]
+   81 |     int prioridadDeTemporal = pq->heapArray[masGrande].priority;
+      |         ^~~~~~~~~~~~~~~~~~~
+heap.c:80:11: error: unused variable ‘temporalData’ [-Werror=unused-variable]
+   80 |     void* temporalData = pq->heapArray[masGrande].data;
+      |           ^~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+f4712d6

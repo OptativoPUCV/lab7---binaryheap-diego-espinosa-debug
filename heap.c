@@ -76,6 +76,12 @@ void heap_pop(Heap* pq){
     if(derecha < pq->size && pq->heapArray[derecha].priority > pq->heapArray[masGrande].priority){
       masGrande = derecha;
     }
+
+    void* temporalData = pq->heapArray[masGrande].data;
+    int prioridadDeTemporal = pq->heapArray[masGrande].priority;
+
+    pq->heapArray[masGrande].data = pq->heapArray[control].data;
+    pq->heapArray[masGrande].priority = pq->heapArray[control].priority;
     
     control = pq->size + 1;
   }
